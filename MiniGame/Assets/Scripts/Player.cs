@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
 	public float lowWarn = -4;
 	public float jumpBoost = 2.5f;
 	public float step = 0.5f;
+	public float tallStep = 0.1f;
 	
 	TextMesh scoreOutput;
 	int score = 0;
@@ -19,6 +20,7 @@ public class Player : MonoBehaviour
 
 	void Update()
 	{
+		transform.localScale += new Vector3(0, step * Time.deltaTime, 0);
 		transform.position += new Vector3(step * Time.deltaTime, 0, 0);
 		if (Input.GetButtonDown("Jump"))
 		{
