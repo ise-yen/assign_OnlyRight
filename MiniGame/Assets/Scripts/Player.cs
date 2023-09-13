@@ -11,7 +11,7 @@ public class Player : MonoBehaviour
 
     void Start()
     {
-        // ÀÌ¸§À¸·Î °ÔÀÓ ¿ÀºêÁ§Æ®¸¦ Ã£°í, ±× Áß TextMesh ÄÄÆ÷³ÍÆ®¸¦ ¾ò±â
+        // ì´ë¦„ìœ¼ë¡œ ê²Œì„ ì˜¤ë¸Œì íŠ¸ë¥¼ ì°¾ê³ , ê·¸ ì¤‘ TextMesh ì»´í¬ë„ŒíŠ¸ë¥¼ ì–»ê¸°
         scoreOutput = GameObject.Find(name: "Score").GetComponent<TextMesh>();
     }
 
@@ -25,10 +25,10 @@ public class Player : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 	}
 
-    // Á¡¼ö ´õÇÏ±â
+    // ì ìˆ˜ ë”í•˜ê¸°
     public void addScore(int s)
 	{
         score += s;
-        scoreOutput.text = "Á¡¼ö : " + score;
+        scoreOutput.text = "ì ìˆ˜ : " + score;
 	}
 }

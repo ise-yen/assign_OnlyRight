@@ -5,16 +5,15 @@ using UnityEngine;
 public class Spawner : MonoBehaviour
 {
     public GameObject wallPrefab;
-    public float interval = 1.5f; // ÀÏÁ¤ ½Ã°£¸¶´Ù
+    public float interval = 1.5f; // ì¼ì • ì‹œê°„ë§ˆë‹¤
     public float range = 3;
     float term;
 
     void Start()
     {
-        term = interval; // ½ÃÀÛºÎÅÍ º®ÀÌ ÇÏ³ª ³ª¿À±â À§ÇØ
+        term = interval; // ì‹œì‘ë¶€í„° ë²½ì´ í•˜ë‚˜ ë‚˜ì˜¤ê¸° ìœ„í•´
     }
 
-    // Update is called once per frame
     void Update()
     {
         term += Time.deltaTime;
