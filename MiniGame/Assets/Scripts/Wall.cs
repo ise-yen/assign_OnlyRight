@@ -13,5 +13,6 @@ public class Wall : MonoBehaviour
     void Update()
     {
         transform.Translate(speed * Time.deltaTime, 0, 0);
+        if (transform.position.x < -10) Destroy(gameObject);
     }
 }
