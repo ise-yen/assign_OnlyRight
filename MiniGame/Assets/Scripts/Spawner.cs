@@ -6,6 +6,7 @@ public class Spawner : MonoBehaviour
 {
     public GameObject wallPrefab;
     public float interval = 1.5f; // 일정 시간마다
+    public float range = 3;
     float term;
 
     void Start()
@@ -19,7 +20,9 @@ public class Spawner : MonoBehaviour
         term += Time.deltaTime;
         if(term >= interval)
 		{
-            Instantiate(wallPrefab, transform.position, transform.rotation);
+            Vector3 pos = transform.position;
+            pos.y += Random.Range(-range, range);
+            Instantiate(wallPrefab, pos, transform.rotation);
             term -= interval;
 		}
     }
