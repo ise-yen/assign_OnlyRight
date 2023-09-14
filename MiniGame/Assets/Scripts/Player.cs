@@ -6,8 +6,8 @@ public class Player : MonoBehaviour
 	public float jumpPower = 5;
 	public float lowWarn = -4;
 	public float jumpBoost = 2.5f;
-	public float step = 0.5f;
-	public float tallStep = 0.1f;
+	public float moveStep = 0.5f;
+	public float tallStep = 0.2f;
 	
 	TextMesh scoreOutput;
 	int score = 0;
@@ -20,8 +20,15 @@ public class Player : MonoBehaviour
 
 	void Update()
 	{
-		transform.localScale += new Vector3(0, step * Time.deltaTime, 0);
-		transform.position += new Vector3(step * Time.deltaTime, 0, 0);
+		// 키가 늘거나 줄거나
+		float tall = Random.Range(-tallStep, tallStep);
+		transform.localScale += new Vector3(0, tall * Time.deltaTime, 0);
+
+		// 앞뒤로 이동
+		float move = Random.Range(-moveStep, moveStep);
+		transform.position += new Vector3(move * Time.deltaTime, 0, 0);
+
+		// 점프키를 누르면 점프하거나 점프 부스트
 		if (Input.GetButtonDown("Jump"))
 		{
 			if (transform.position.y < lowWarn)
