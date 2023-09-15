@@ -2,11 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Goods : MonoBehaviour
+public class Goods : SpnObj
 {
 	Player player;
-
-	public float moveSpeed = -5;
 
 	public enum eGoodsType { Gold, Diamond };
 	public eGoodsType type;
@@ -23,13 +21,11 @@ public class Goods : MonoBehaviour
 
 	void Update()
     {
-		move();
-		deletePass();
+		rotate();
 	}
 	private void OnTriggerEnter(Collider other)
 	{
-		if (other.name == "Player")
-			getScore();
+		if (other.name == "Player") getScore();
 	}
 
 	// 점수 시스템
@@ -45,21 +41,6 @@ public class Goods : MonoBehaviour
 				break;
 		}
 		Destroy(gameObject);
-	}
-
-	// 움직이기
-	void move()
-	{
-		transform.Translate(0, 0, moveSpeed * Time.deltaTime);
-	}
-
-	// 지나가면 삭제 -- 최적화
-	void deletePass()
-	{
-		if (transform.position.x < -10)
-		{
-			Destroy(gameObject);
-		}
 	}
 
 	// 기본 회전

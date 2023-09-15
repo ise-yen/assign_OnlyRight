@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Wall : MonoBehaviour
+public class Wall : SpnObj
 {
     Player player;
 
-    public float speed = -10f;
+    public float moveSpeed = -10f;
 
     void Start()
     {
@@ -15,23 +15,7 @@ public class Wall : MonoBehaviour
 
     void Update()
     {
-		move();
+		move(moveSpeed);
 		deletePass();
-	}
-
-
-	// 움직이기
-	void move()
-	{
-		transform.Translate(speed * Time.deltaTime, 0, 0);
-	}
-
-	// 지나가면 삭제 -- 최적화
-	void deletePass()
-	{
-		if (transform.position.x < -10)
-		{
-			Destroy(gameObject);
-		}
 	}
 }
