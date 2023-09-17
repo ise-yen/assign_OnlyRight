@@ -23,6 +23,9 @@
 #### 1-a. 재화 추가 (성공)
 #### 1-b. 자전(실패) 이동(성공)
 - 자전하면서 이동시키면 공전을 하는 문제 발생. 3d 좌표 문제인듯
+<img src="https://user-images.githubusercontent.com/66158433/268156316-3db07a59-ecab-48ce-bfdd-9e720908f37a.png" width="400" height="200"/>
+<img src="https://user-images.githubusercontent.com/66158433/268156319-0b08222d-98b3-4d8b-848d-d61f4d984b6a.png" width="400" height="200"/>
+
 #### 2-a. 플레이어 속도 삭제 (성공)
 #### 2-b. 오브젝트 속도 증가 (실패) 
 - 시간 부족
