@@ -30,7 +30,11 @@ public class Player : MonoBehaviour
         anim.SetFloat("Speed", charCtrl.velocity.magnitude); // "Speed": Unity 엔진의 Animator의 Parameter 이름 / magnitude == 일반화
         if (GameObject.FindGameObjectsWithTag("Dot").Length < 1)
 		{
-            SceneManager.LoadScene("Win");
+            if(SceneManager.GetActiveScene().name == "Main")
+			{
+                SceneManager.LoadScene("Main1");
+            }
+            else SceneManager.LoadScene("Win");
 		}
     }
 
