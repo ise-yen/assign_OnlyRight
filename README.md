@@ -77,6 +77,10 @@
   - 1주차 금요일에 배운 유니티짱과 애니메이션 이용
   - **AI Navigation**을 새로 배움: Bake, NavMesh
 
+- 과제: DotEater 강화
+
+<img src="https://user-images.githubusercontent.com/66158433/269001577-3fc44a4c-2c19-49c9-b776-43b0de749038.png" width="400" height="200"/>
+
 <details>
   <summary> <b>Review</b> </summary>
   
