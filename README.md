@@ -13,13 +13,12 @@
   - 교육 방식 및 교육자 소개
   - 지원금 사용 방법
 - 게임 산업의 추세 
-- Unity라는 엔진의 기초 사용법 배우기
+- **Unity 엔진 기초 사용법** 배우기
   - 화면 구성: Hierachy, Scene, Game, Inspector 등
   - 오브젝트 생성 및 조작
   - 씬 화면 조작
   - Material 생성 방법
-- 기초 사용법으로 캐릭터 만들어보기
-
+- 기초 사용법으로 캐릭터 만들기
 
 <details>
   <summary> <b>Review</b> </summary>
@@ -35,13 +34,12 @@
 
 
 ### [1주차] 9월 13일 수
-- 플로피버드 3D로 모작
+- **플로피버드 3D 모작**
   - Collider 관련 충돌 처리
   - Prefab 설명
   - 스포너(Spawner)으로 장애물 스폰
   - Score 시스템 + UI
   - 간단한 최적화: 사용이 끝난 오브젝트 삭제 => 보통 Object Pooling으로 처리하지만 아직 입문용이라 이정도
-
 
 <details>
   <summary> <b>Review</b> </summary>
@@ -53,11 +51,10 @@
 </details>
 
 ### [1주차] 9월 15일 금
-- 유니티짱(unityChan!) 패키지로 Animator 배우기
+- **유니티짱(unityChan!)** 패키지로 **Animator** 배우기
   - 유니티짱 패키지 다운로드
   - Animator Controller
 - MiniGame(플로피버드 모작)에 유니티짱+애니메이션 적용시키기
-
 
 <details>
   <summary> <b>Review</b> </summary>
@@ -73,7 +70,7 @@
 ### [2주차] 9월 18일 월
 - 오리엔테이션 때 시간 부족으로 진행하지 못한 **미니게임 in ZEP** 진행
 - **DotEater(도트 먹기) 제작**
-  - 팩맨 3D로 모작
+  - 팩맨 3D 모작
   - 1주차 금요일에 배운 유니티짱과 애니메이션 이용
   - **AI Navigation**을 새로 배움: Bake, NavMesh
 
