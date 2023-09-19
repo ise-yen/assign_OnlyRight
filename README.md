@@ -37,12 +37,18 @@
 
 
 ## [1주차] 9월 13일 수
-- **[플로피버드 3D 모작](https://github.com/ise-yen/Unity10Camp_udemyXsniperfactory/tree/main/MiniGame#readme)**
+- **플로피버드 3D 모작**
   - Collider 관련 충돌 처리
   - Prefab 설명
   - 스포너(Spawner)으로 장애물 스폰
   - Score 시스템 + UI
   - 간단한 최적화: 사용이 끝난 오브젝트 삭제 => 보통 Object Pooling으로 처리하지만 아직 입문용이라 이정도
+
+- **과제: 미니게임 강화**
+  - 지금까지 배운 내용으로 미니게임 변주하기
+  - [미니게임 데브로그](https://github.com/ise-yen/Unity10Camp_udemyXsniperfactory/tree/main/MiniGame#readme)
+    - 슈퍼마리오처럼 코인 획득. 코인으로 점수 카운트되도록 수정
+    - 슈퍼마리오의 코인처럼 코인의 자전 구현: 14일에는 실패. 15일 질문하여 해결
 
 <details>
   <summary> <b>Review</b> </summary>
@@ -58,6 +64,12 @@
   - 유니티짱 패키지 다운로드
   - Animator Controller
 - MiniGame(플로피버드 모작)에 유니티짱+애니메이션 적용시키기
+
+- **과제: 미니게임 만들기**
+  - 지금까지 배운 내용으로 간단한 미니게임 만들기
+  - 미니게임 컨셉: 실제 게임 모작
+  - [프로젝트명: OnlyRight!](https://github.com/ise-yen/Unity10Camp_udemyXsniperfactory/tree/main/OnlyRight)
+    - OnlyUp!의 위로가는 컨셉을 Right 방향으로 달려가도록 재해석
 
 <details>
   <summary> <b>Review</b> </summary>
@@ -77,7 +89,9 @@
   - 1주차 금요일에 배운 유니티짱과 애니메이션 이용
   - **AI Navigation**을 새로 배움: Bake, NavMesh
 
-- 과제: DotEater 강화
+- **과제: DotEater 강화**
+  - 스테이지 추가
+  - 새로운 스테이지의 맵 새로 제작
 
 <img src="https://user-images.githubusercontent.com/66158433/269001577-3fc44a4c-2c19-49c9-b776-43b0de749038.png" width="400" height="200"/>
 
