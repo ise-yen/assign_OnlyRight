@@ -8,11 +8,19 @@
   
 
 
+## 9월
+### [2주차] 9월 18일 월
+Script의 이름은 `public class 클래스명 : MonoBehavior`의 클래스명과 같게 해야함
 
 
+#### Animator
+[!Animator in Unity Document](https://docs.unity3d.com/Manual/AnimationLayers.html)
 
-
-
+Apply Root Motion: Root가 가지고 있는 기능을 사용할 때 체크
+- Layer 개념을 가짐
+- Base Layer: 최초
+- Any State
+- Entry : 시작
 
 
 
