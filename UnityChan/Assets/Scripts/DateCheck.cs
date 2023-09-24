@@ -23,8 +23,6 @@ public class DateCheck : MonoBehaviour
         nowDay = now.Day;
 
         //// 소리 재생
-        //univoice = GetComponent<AudioSource>();
-        //univoice.PlayOneShot(voiceBirthday);
 
         // 음성 데이터 정리
         univoice = GetComponent<AudioSource>();
@@ -46,7 +44,8 @@ public class DateCheck : MonoBehaviour
             {
                 if(oldMonth != nowMonth || oldMonth != nowDay)
 				{
-                    univoice.PlayOneShot(voiceDate[i]);
+					univoice.clip = voiceDate[i];
+					univoice.Play();
                     Debug.Log(voiceDate[i].name);
                 }
             }
